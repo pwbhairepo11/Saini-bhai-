@@ -281,7 +281,7 @@ async def restart_handler(_, m):
             f"<blockquote>__**Oopss! You are not a Premium member**__\n"
             f"__**PLEASE /upgrade YOUR PLAN**__\n"
             f"__**Send me your user id for authorization**__\n"
-            f"__**Your User id** __- `{m.chat.id}`</blockquote>\n\n"
+            f"__**6977768796** __- `{m.chat.id}`</blockquote>\n\n"
         )
     else:
         await m.reply_text("🚦**STOPPED**🚦", True)
@@ -1032,7 +1032,7 @@ async def text_handler(bot: Client, m: Message):
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
                         copy = await bot.send_document(chat_id=m.chat.id, document=f'{name}.zip', caption=cc1)
-                        os.remove(f'{name}.zip')
+                        os.remove(f'{name}.jzip')
                     except FloodWait as e:
                         await m.reply_text(str(e))
                         time.sleep(e.x)
